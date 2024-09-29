@@ -3,6 +3,8 @@
 
 import 'package:flutter/material.dart';
 
+import '../../../../../global/theme/theme.dart';
+
 class LeftSideProfileWidget extends StatefulWidget {
   const LeftSideProfileWidget({Key? key}) : super(key: key);
 
@@ -16,9 +18,10 @@ class _LeftSideProfileWidgetState extends State<LeftSideProfileWidget> {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 240,
-      height: 345,
+
+      width: 220,
       child: Card(
+        color: linkedInWhiteFFFFFF,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(10),
         ),
@@ -57,6 +60,7 @@ class _LeftSideProfileWidgetState extends State<LeftSideProfileWidget> {
                       style: TextStyle(
                         fontSize: 16,
                         fontWeight: FontWeight.w600,
+                        color: Colors.black,
                         decoration: _isHoveringName
                             ? TextDecoration.underline
                             : TextDecoration.none,
@@ -71,7 +75,7 @@ class _LeftSideProfileWidgetState extends State<LeftSideProfileWidget> {
               right: 10,
               left: 10,
               child: CircleAvatar(
-                radius: 35,
+                radius: 40,
               ),
             ),
             Column(
@@ -88,7 +92,7 @@ class _LeftSideProfileWidgetState extends State<LeftSideProfileWidget> {
                         style: TextStyle(
                           fontSize: 12,
                           wordSpacing: 3,
-                          color: Colors.grey[500],
+                          color: Colors.black,
                           height: 1.5,
                         ),
                         textAlign: TextAlign.center,
@@ -116,7 +120,7 @@ class _LeftSideProfileWidgetState extends State<LeftSideProfileWidget> {
                           Text(
                             "4k post impressions",
                             style: TextStyle(
-                              color: Colors.grey,
+                              color: Colors.black,
                               fontSize: 12,
                             ),
                           ),
@@ -139,7 +143,6 @@ class _LeftSideProfileWidgetState extends State<LeftSideProfileWidget> {
                       Text(
                         "Access exclusive tools & insights",
                         style: TextStyle(
-                          color: Colors.grey[500],
                           fontSize: 12,
                         ),
                       ),

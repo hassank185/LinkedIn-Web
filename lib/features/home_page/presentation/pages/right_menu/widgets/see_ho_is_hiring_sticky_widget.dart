@@ -16,7 +16,7 @@ class SeeHoIsHiringStickyWidget extends StatelessWidget {
     return Column(
       children: [
         Container(
-          width: 290,
+          width: 280,
           child: Card(
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: ClipRRect(borderRadius: BorderRadius.circular(10),child: Image.asset("assets/see_ho_is_hiring.png")),

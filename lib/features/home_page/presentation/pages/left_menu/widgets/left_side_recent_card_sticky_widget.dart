@@ -12,8 +12,9 @@ class LeftSideRecentCardStickyWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
 
-      width: 240,
+      width: 225,
       child: Card(
+        color: linkedInWhiteFFFFFF,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Column(
           children: [
@@ -28,7 +29,7 @@ class LeftSideRecentCardStickyWidget extends StatelessWidget {
                     children: [
                       Icon(Icons.groups),
                       SizedBox(width: 10,),
-                      Text("KDnuggets Data Science & M...",maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.grey,fontSize: 12)),
+                      Expanded(child: Text("KDnuggets Data Science & M...",maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 12))),
                     ],
                   ),
                   SizedBox(height: 20,),
@@ -38,17 +39,7 @@ class LeftSideRecentCardStickyWidget extends StatelessWidget {
                     children: [
                       Icon(Icons.groups),
                       SizedBox(width: 10,),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 25),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("KDnuggets Data Science & M...",maxLines: 2,overflow: TextOverflow.ellipsis,style: TextStyle(overflow: TextOverflow.ellipsis,color: Colors.grey,fontSize: 12)),
-                            SizedBox(height: 10,),
-                            Text("See all",style: TextStyle(color: Colors.grey,fontSize: 12),)
-                          ],
-                        ),
-                      )
+                      Expanded(child: Text("KDnuggets Data Science & M...",maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(overflow: TextOverflow.ellipsis,fontSize: 12)))
                     ],
                   ),
                   SizedBox(height: 20,),

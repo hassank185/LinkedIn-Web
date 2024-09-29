@@ -19,6 +19,7 @@ class PostCardWidget extends StatelessWidget {
     return Container(
       width: double.infinity,
       child: Card(
+        color: linkedInWhiteFFFFFF,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Column(
           children: [
@@ -49,7 +50,7 @@ class PostCardWidget extends StatelessWidget {
                                   Icon(
                                     Icons.more_horiz,
                                     size: 26,
-                                    color: Colors.grey,
+                                 
                                   )
                                 ],
                               ),

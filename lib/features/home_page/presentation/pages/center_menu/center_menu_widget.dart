@@ -15,6 +15,7 @@ class CenterBodyWidget extends StatelessWidget {
     return Expanded(
       flex: 2,
       child: Container(
+        margin: EdgeInsets.symmetric(horizontal: 15),
         child: Column(
           children: [
             CreatePostCardWidget(),

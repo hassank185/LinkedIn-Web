@@ -15,8 +15,9 @@ class LeftSideRecentCardWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider.of<ScrollPixelCubit>(context).getCurrentPixels > 350? SizedBox():Container(
 
-      width: 240,
+      width: 220,
       child: Card(
+        color: linkedInWhiteFFFFFF,
         shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
         child: Column(
           children: [
@@ -31,7 +32,8 @@ class LeftSideRecentCardWidget extends StatelessWidget {
                     children: [
                       Icon(Icons.groups),
                       SizedBox(width: 10,),
-                      Text("KDnuggets Data Science & M...",maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(color: Colors.grey,fontSize: 12)),
+                      Expanded(
+                          child: Text("KDnuggets Data Science & M...",maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 12))),
                     ],
                   ),
                   SizedBox(height: 20,),
@@ -41,17 +43,8 @@ class LeftSideRecentCardWidget extends StatelessWidget {
                     children: [
                       Icon(Icons.groups),
                       SizedBox(width: 10,),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 25),
-                        child: Column(
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Text("KDnuggets Data Science & M...",maxLines: 2,overflow: TextOverflow.ellipsis,style: TextStyle(overflow: TextOverflow.ellipsis,color: Colors.grey,fontSize: 12)),
-                            SizedBox(height: 10,),
-                            Text("See all",style: TextStyle(color: Colors.grey,fontSize: 12),)
-                          ],
-                        ),
-                      )
+                      Expanded(
+                          child: Text("KDnuggets Data Science & M...",maxLines: 1,overflow: TextOverflow.ellipsis,style: TextStyle(fontSize: 12))),
                     ],
                   ),
                   SizedBox(height: 20,),
@@ -75,7 +68,7 @@ class LeftSideRecentCardWidget extends StatelessWidget {
             ),
             SizedBox(height: 10,),
 
-            Text("Discover more",style: TextStyle(color: Colors.grey,fontWeight: FontWeight.bold),)
+            Text("Discover more",style: TextStyle(fontWeight: FontWeight.bold),)
             ,SizedBox(height: 10,),
           ],
         )

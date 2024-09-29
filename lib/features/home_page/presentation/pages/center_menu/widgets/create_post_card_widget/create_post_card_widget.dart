@@ -2,6 +2,7 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:linked_in_web/features/global/theme/theme.dart';
 import 'package:linked_in_web/features/home_page/presentation/pages/center_menu/widgets/create_post_card_widget/widgets/create_post_field_widget.dart';
 import 'package:linked_in_web/features/home_page/presentation/pages/center_menu/widgets/create_post_card_widget/widgets/create_post_item_row_widget.dart';
 
@@ -15,6 +16,7 @@ class CreatePostCardWidget extends StatelessWidget {
         Container(
           width: double.infinity,
           child: Card(
+            color: linkedInWhiteFFFFFF,
             shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10)),
             child: Padding(
               padding: const EdgeInsets.symmetric(horizontal: 10,vertical: 15),

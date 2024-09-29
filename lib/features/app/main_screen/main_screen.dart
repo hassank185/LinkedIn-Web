@@ -12,7 +12,6 @@ import 'package:linked_in_web/features/notification_page/presentation/pages/noti
 
 import 'package:sticky_headers/sticky_headers/widget.dart';
 
-import '../../home_page/presentation/pages/right_menu/widgets/see_ho_is_hiring_widget.dart';
 import '../../provider/scroll_pixel/scroll_pixel_cubit.dart';
 
 class MainScreen extends StatefulWidget {
@@ -101,7 +100,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
 
           _scrollPixel > 350?Positioned(
-            left: 85,
+            left: 145,
             top: 60,
             child: Container(
               //width: 272,
@@ -111,7 +110,7 @@ class _MainScreenState extends State<MainScreen> {
 
 
           if (_scrollPixel > 345) Positioned(
-            right: 85,
+            right: 145,
             top: 60,
             child: Container(
 

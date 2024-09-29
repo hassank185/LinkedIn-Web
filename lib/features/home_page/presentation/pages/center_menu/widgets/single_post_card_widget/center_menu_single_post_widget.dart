@@ -15,7 +15,9 @@ class _CenterMenuSinglePostWidgetState extends State<CenterMenuSinglePostWidget>
   List<PostEntity> postData = PostListClass.postData;
   @override
   Widget build(BuildContext context) {
-    return ListView.builder(physics: ScrollPhysics(), shrinkWrap: true,itemCount: postData.length,itemBuilder: (context, index) {
+    return ListView.builder(
+        physics: ScrollPhysics(),
+        shrinkWrap: true,itemCount: postData.length,itemBuilder: (context, index) {
       final post = postData[index];
       return PostCardWidget(
         post: post,

@@ -21,8 +21,8 @@ class NavBarWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       width: double.infinity,
-      padding: EdgeInsets.only(left: 100),
-      height: 50,
+      padding: EdgeInsets.only(left: 150),
+      height: 51,
       color: commonColor,
       child: Row(
         children: [
